@@ -1,0 +1,53 @@
+﻿.icon-label {
+    display: flex;
+    align-items: center;
+}
+
+.credit-card-icon {
+    color: #3498db; /* Blue color for credit card icon */
+    margin-right: 10px;
+}
+
+.cash-icon {
+    color: #27ae60; /* Green color for cash icon */
+    margin-right: 10px;
+}
+
+.btn-primary {
+    background-color: #3498db; /* Blue color for the button */
+    border-color: #3498db;
+}
+
+    .btn-primary:hover {
+        background-color: #2980b9; /* Slightly darker blue on hover */
+        border-color: #2980b9;
+    }
+
+.checkout-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-summary {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+    .order-summary div {
+        margin-bottom: 5px;
+    }
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.order-icon {
+    font-size: 4em; /* Increased font size */
+    color: #28a745;
+}

@@ -1,0 +1,30 @@
+﻿@model Review
+@{
+    ViewData["Title"] = "AddReview";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<section class="light">
+    <div class="container py-2">
+        <div class="h1 text-center text-dark" id="pageHeaderTitle">Add Review</div>
+
+        <div class="card user-card">
+            <div class="card-header user-header" style="background-color: #db545a; color: white;">
+                <h5 class="card-title">Review Form</h5>
+            </div>
+            <div class="card-body">
+                <form asp-action="AddReview" method="post">
+                   
+                    <div class="mb-3">
+                        <label asp-for="ReviewDescription" class="form-label">Review Description:</label>
+                        <textarea asp-for="ReviewDescription" class="form-control" required></textarea>
+                    </div>
+                   
+                    <button type="submit" class="btn btn-primary" style="background-color: #db545a; color: white;">Submit Review</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+

@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index checkout</h1>
+@model OrderItem
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+
+            <div class="checkout-container p-4 border rounded shadow">
+                <div class="form-group text-center">
+                    <h4 class="text-info">Order Total: @Model.Total</h4>
+                </div>
+
+                <!-- Order Summary Section -->
+                <div class="order-summary mb-4">
+                    <h5 class="text-center mb-3">Order Summary</h5>
+
+                    @foreach (var item in Model.CartItems)
+                    {
+                        <div class="d-flex justify-content-between">
+                            <span>@item.MenuItemcart.Name <strong>x</strong> @item.Quantity </span>
+                            <span>LKR @item.SubTotal.ToString("N2")</span>
+                        </div>
+                    }
+                </div>
+
+                <div class="form-group text-center">
+                    <label>Select Payment Method:</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="radio" asp-for="PaymentMethod" value="card" class="form-check-input" required />
+                    <label class="form-check-label icon-label">
+                        <i class="fas fa-credit-card credit-card-icon"></i> Credit Card
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input type="radio" asp-for="PaymentMethod" value="money" class="form-check-input" required />
+                    <label class="form-check-label icon-label">
+                        <i class="fas fa-money-bill-wave cash-icon"></i> Cash
+                    </label>
+                </div>
+
+                <!-- Add other necessary form fields, e.g., shipping address, contact info, etc. -->
+
+                <div class="text-center">
+                    <a  asp-action="Checkout" asp-controller="Checkout" asp-route-id="@Model.cartId" class="btn btn-primary btn-lg">
+                        Proceed to Payment <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

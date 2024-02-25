@@ -1,0 +1,389 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Black_Coffee_Cafe.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Black_Coffee_Cafe.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\Images\\08788f81-95d9-4c28-977c-e10e6a948c7e_gridItem1.jpg",
+      "PackagePath": "staticwebassets\\Images\\08788f81-95d9-4c28-977c-e10e6a948c7e_gridItem1.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\Images\\0ac4641f-8e68-4eee-a1a1-70045432b1f6_facebook.png",
+      "PackagePath": "staticwebassets\\Images\\0ac4641f-8e68-4eee-a1a1-70045432b1f6_facebook.png"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\Images\\1a5606ad-df36-4057-a493-3eb339cc7444_veggie-wrap.jpg",
+      "PackagePath": "staticwebassets\\Images\\1a5606ad-df36-4057-a493-3eb339cc7444_veggie-wrap.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\Images\\1c5cbdbf-9a45-4af0-afd7-0752c68f5c3d_Home1.png",
+      "PackagePath": "staticwebassets\\Images\\1c5cbdbf-9a45-4af0-afd7-0752c68f5c3d_Home1.png"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\Images\\298aba05-e213-447d-9755-2c839403dca9_gridItem5.jpg",
+      "PackagePath": "staticwebassets\\Images\\298aba05-e213-447d-9755-2c839403dca9_gridItem5.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\Images\\39008a62-9741-48eb-beeb-8a8123bd1eb2_pizza.jpg",
+      "PackagePath": "staticwebassets\\Images\\39008a62-9741-48eb-beeb-8a8123bd1eb2_pizza.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\Images\\4fa6f5e2-293d-4c3c-8504-9c34d1a05a01_burger.jpg",
+      "PackagePath": "staticwebassets\\Images\\4fa6f5e2-293d-4c3c-8504-9c34d1a05a01_burger.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\Images\\7a0763b9-425c-4c18-a2d0-f513683baae2_gridItem4.jpg",
+      "PackagePath": "staticwebassets\\Images\\7a0763b9-425c-4c18-a2d0-f513683baae2_gridItem4.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\Images\\80a8c21a-f4ed-4b2a-95b6-d6cb8a7a15bf_setting.jpg",
+      "PackagePath": "staticwebassets\\Images\\80a8c21a-f4ed-4b2a-95b6-d6cb8a7a15bf_setting.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\Images\\Home1.png",
+      "PackagePath": "staticwebassets\\Images\\Home1.png"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\Images\\Login.jpg",
+      "PackagePath": "staticwebassets\\Images\\Login.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\Images\\a5cd3877-9ffc-40f6-b12e-ce9bc8ee5341_gridItem6.jpg",
+      "PackagePath": "staticwebassets\\Images\\a5cd3877-9ffc-40f6-b12e-ce9bc8ee5341_gridItem6.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\Images\\b255c679-cb5b-4b19-925c-900dfde638dc_gridItem6.jpg",
+      "PackagePath": "staticwebassets\\Images\\b255c679-cb5b-4b19-925c-900dfde638dc_gridItem6.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\Images\\d05d7bdd-8ad0-4ac5-8996-c5d6371bbf9d_sushi.jpg",
+      "PackagePath": "staticwebassets\\Images\\d05d7bdd-8ad0-4ac5-8996-c5d6371bbf9d_sushi.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\Images\\d79edcd1-a543-4300-82a7-a11cee5750ca_salad.jpg",
+      "PackagePath": "staticwebassets\\Images\\d79edcd1-a543-4300-82a7-a11cee5750ca_salad.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\Images\\facebook.png",
+      "PackagePath": "staticwebassets\\Images\\facebook.png"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\Images\\gridItem1.jpg",
+      "PackagePath": "staticwebassets\\Images\\gridItem1.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\Images\\gridItem2.jpg",
+      "PackagePath": "staticwebassets\\Images\\gridItem2.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\Images\\gridItem3.jpg",
+      "PackagePath": "staticwebassets\\Images\\gridItem3.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\Images\\gridItem4.jpg",
+      "PackagePath": "staticwebassets\\Images\\gridItem4.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\Images\\gridItem5.jpg",
+      "PackagePath": "staticwebassets\\Images\\gridItem5.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\Images\\gridItem6.jpg",
+      "PackagePath": "staticwebassets\\Images\\gridItem6.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\Images\\inside.jpg",
+      "PackagePath": "staticwebassets\\Images\\inside.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\Images\\int.jpg",
+      "PackagePath": "staticwebassets\\Images\\int.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\Images\\setting.jpg",
+      "PackagePath": "staticwebassets\\Images\\setting.jpg"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\css\\Cart.css",
+      "PackagePath": "staticwebassets\\css\\Cart.css"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\css\\Login.css",
+      "PackagePath": "staticwebassets\\css\\Login.css"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\css\\checkout.css",
+      "PackagePath": "staticwebassets\\css\\checkout.css"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\css\\final.css",
+      "PackagePath": "staticwebassets\\css\\final.css"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\css\\menu.css",
+      "PackagePath": "staticwebassets\\css\\menu.css"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\Projects\\backup before auth\\new final\\Black_Coffee_Cafe\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Black_Coffee_Cafe.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Black_Coffee_Cafe.props",
+      "PackagePath": "build\\Black_Coffee_Cafe.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Black_Coffee_Cafe.props",
+      "PackagePath": "buildMultiTargeting\\Black_Coffee_Cafe.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Black_Coffee_Cafe.props",
+      "PackagePath": "buildTransitive\\Black_Coffee_Cafe.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

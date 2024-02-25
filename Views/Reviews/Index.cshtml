@@ -1,0 +1,42 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model List<Review>
+
+    
+@{
+    ViewData["Title"] = "Reviews";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="light">
+    <div class="container py-2">
+        <div class="h1 text-center text-dark" id="pageHeaderTitle">Customer Reviews</div>
+        <div class="text-end mb-3">
+            <a asp-action="AddReview" asp-controller="Reviews" class="btn btn-primary">Add a Review</a>
+        </div>
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var review in Model)
+            {
+                <div class="card mb-4 user-card">
+                    <div class="card-header user-header" style="background-color: #808080; color: white;">
+                        <h8 class="card-title">Review Details</h8>
+                        <p class="card-subtitle text-muted user-subtitle">Date: @review.DateString @review.Time</p>
+                        <p class="card-subtitle text-muted user-subtitle">@review.User.FirstName @review.User.LastName</p>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">@review.ReviewDescription</p>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <p>No reviews available.</p>
+        }
+    </div>
+</section>
+

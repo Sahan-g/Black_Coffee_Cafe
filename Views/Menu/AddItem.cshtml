@@ -1,0 +1,72 @@
+﻿@model MenuItemVm
+@{
+    ViewData["Title"] = "AddItem";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Add New Menu Item</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="AddItem" method="post" enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <label asp-for="Item.Name" class="form-label">Item Name:</label>
+                            <input asp-for="Item.Name" class="form-control" required />
+                            <span asp-validation-for="Item.Name" class="text-danger"/>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Item.Description" class="form-label">Item Description:</label>
+                            <textarea asp-for="Item.Description" class="form-control" rows="3"></textarea>
+                            <span asp-validation-for="Item.Description" class="text-danger" />
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Item.Price" class="form-label">Price:</label>
+                            <input asp-for="Item.Price" type="number" class="form-control" step="0.01" required />
+                            <span asp-validation-for="Item.Price" class="text-danger" />
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Item.CookingMethod0" class="form-label">Cooking Method 01 :</label>
+                            <input asp-for="Item.CookingMethod1" class="form-control" />
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Item.CookingMethod1" class="form-label">Cooking Method 02:</label>
+                            <input asp-for="Item.CookingMethod1" class="form-control" />
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Image" class="form-label">Image Path:</label>
+                            <input asp-for="Image" type="file" class="form-control" />
+                            <span asp-validation-for="Image"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Item.Topping0" class="form-label">Topping 0:</label>
+                            <input asp-for="Item.Topping0" class="form-control" />
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Item.Topping1" class="form-label">Topping 1:</label>
+                            <input asp-for="Item.Topping1" class="form-control" />
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Item.Topping2" class="form-label">Topping 2:</label>
+                            <input asp-for="Item.Topping2" class="form-control" />
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label asp-for="Item.Flavor1" class="form-label">Flavor 1:</label>
+                            <input asp-for="Item.Flavor1" class="form-control" />
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Item.Flavor2" class="form-label">Flavor 2:</label>
+                            <input asp-for="Item.Flavor2" class="form-control" />
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add Item</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "OrderConfirmation";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>OrderConfirmation</h1>
+
+<div class="row">
+    <div class="col-md-6 offset-md-3 text-center">
+        <i class="fas fa-check-circle order-icon"></i>
+        <h1 class="mt-3">Order Successful</h1>
+        <p>Your order with ID: <strong>@TempData["Session"].ToString()</strong> has been successfully placed.</p>
+        <p>Thank you for shopping with us!</p>
+        <!-- You can display additional order details here if needed -->
+        <a href="/" class="btn btn-success mt-3">Continue Shopping</a>
+    </div>
+</div>
+   
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>

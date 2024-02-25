@@ -1,0 +1,117 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="container-fluid">
+    <div class="jumbotron mb-4">
+        <div class="row align-items-center">
+            <!-- Left Column -->
+            <div class="col-lg-6 col-md-8 col-sm-10 col-12 order-md-1 order-2 animate__animated animate__fadeInLeft my-5">
+                <div class="cafe-name text-start pt-5" style="font-family: 'Roboto', sans-serif;">
+                    <h1 class="display-1 pt-5" style="color: #db545a;">BLACK</h1>
+                    <p class="lead text-muted display-4">COFFEE CAFE</p>
+                    <p class="text-muted text-wrap">
+                        Welcome to Sea King Restaurant, an enchanting culinary haven where the<br> ocean's
+                        bounty meets exquisite flavors to create a dining experience<br> like no other.
+                        Nestled on the picturesque coastline, Sea King is a mythical<br> retreat that beckons food enthusiasts and seafood lovers alike.
+                    </p>
+
+                    <button type="button" style="margin-left: 400px; font-family: 'Roboto', sans-serif;" class="menu-button mt-3" id="viewMenuButton">
+                        <a class="hoverblank" asp-controller="Menu" asp-action="Index">View Menu</a>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-lg-6 text-center order-md-2 order-1 animate__animated animate__fadeInRight mt-4 ">
+                <img src="@Url.Content("~/Images/Home1.png")" alt="Cafe Image" class="cafe-image img-fluid" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="second-sec rounded-2 shadow-lg">
+    <div class="container-fluid mt-0 mb-5">
+        <div class="row">
+            <div class="col-md-12 p-4">
+                <div class="text-center">
+                    <h2 class="mb-4 display-3" data-aos="slide-up"> <span style="color: #db545a;">Explore</span> Our Menu</h2>
+                </div>
+                <!-- Menu Grid -->
+                <div class="row">
+                    <!-- Menu Item 1 -->
+                    <div class="col-md-4 mb-3 menu-item rounded-2">
+                        <img src="@Url.Content("~/Images/gridItem1.jpg")" alt="Menu Item 1">
+                    </div>
+                    <!-- Menu Item 2 -->
+                    <div class="col-md-4 mb-3 menu-item rounded-2">
+                        <img src="@Url.Content("~/Images/gridItem2.jpg")" alt="Menu Item 2">
+                    </div>
+                    <!-- Menu Item 3 -->
+                    <div class="col-md-4 mb-3 menu-item rounded-2">
+                        <img src="@Url.Content("~/Images/gridItem3.jpg")" alt="Menu Item 3">
+                    </div>
+                    <!-- Menu Item 4 -->
+                    <div class="col-md-4 mb-3 menu-item rounded-2">
+                        <img src="@Url.Content("~/Images/gridItem4.jpg")" alt="Menu Item 4">
+                    </div>
+                    <!-- Menu Item 5 -->
+                    <div class="col-md-4 mb-3 menu-item rounded-2">
+                        <img src="@Url.Content("~/Images/gridItem5.jpg")" alt="Menu Item 5">
+                    </div>
+                    <!-- Menu Item 6 -->
+                    <div class="col-md-4 menu-item rounded-2">
+                        <img src="@Url.Content("~/Images/gridItem6.jpg")" alt="Menu Item 6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <!-- Cafe Setting Content -->
+        <div class="col-md-6">
+            <div class="cafe-setting">
+                <h2 class="display-4 mb-4 " style="font-family: 'Roboto', sans-serif; color:#595c5f"> <span style="color: #db545a;">Discover</span> Our Ambiance</h2>
+                <p class="lead">
+                    Welcome to Black Coffee Cafe, where the ambiance meets perfection. Our cafe is designed
+                    to provide a cozy and comfortable environment for our valued customers.
+                </p>
+                <p>
+                    With a blend of modern and rustic decor, we strive to create a unique and inviting space.
+                    Whether you're here for a casual meeting, some personal time, or catching up with friends,
+                    our cafe setting is perfect for every occasion.
+                </p>
+                <p>
+                    Enjoy the aroma of freshly brewed coffee as you immerse yourself in the warmth of our cafe.
+                    We take pride in offering not just exceptional coffee but an overall delightful experience.
+                </p>
+            </div>
+        </div>
+
+        <!-- Cafe Setting Image -->
+        <div class="col-md-6 text-center">
+            <img src="@Url.Content("~/Images/setting.jpg")" alt="Cafe Setting" class="cafe-setting-image img-fluid" />
+        </div>
+    </div>
+</div>
+<div class="mt-5 pt-5">
+</div>
+
+
+
+
+
+
+<script>
+
+    document.getElementById('viewMenuButton').addEventListener('click', function () {
+
+        var href = document.querySelector('#viewMenuButton a').getAttribute('href');
+
+
+        window.location.href = href;
+    });
+</script>

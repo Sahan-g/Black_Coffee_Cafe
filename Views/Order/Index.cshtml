@@ -1,0 +1,109 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model List<OrderItem>
+
+@*foreach (var order in Model)
+{
+    <div class="card order-container mb-4">
+        <h2 class="card-title order-id">Order ID: @order.OrderId</h2>
+        <div class="card-body">
+            <p class="card-text">Total: @order.Total</p>
+            <p class="card-text">Status: @order.OrderStatus</p>
+            <p class="card-text">Date: @order.OrderDate</p>
+            <p class="card-text">Time: @order.OrderTime</p>
+
+            <div class="cart-items-container mt-3">
+                <h3>Cart Items</h3>
+                <div class="card-deck">
+                    @foreach (var cartItem in order.CartItems)
+                    {
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text">Item ID: @cartItem.Id</p>
+                                <p class="card-text">Quantity: @cartItem.Quantity</p>
+                                <p class="card-text">Subtotal: @cartItem.SubTotal</p>
+                                <!-- Display other cart item details -->
+                                <p class="card-text">Item Name: @cartItem.MenuItemcart.Name</p>
+                                <!-- Add more details as needed -->
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+}
+*@
+
+
+<section class="light">
+    <div class="container py-2">
+        <div class="h1 text-center text-dark" id="pageHeaderTitle">My Orders </div>
+
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var order in Model)
+            {
+                <div class="card mb-4 user-card">
+                    <div class="card-header user-header" style="background-color: #db545a; color: white;">
+                        <h5 class="card-title">Order Details</h5>
+                        <p class="card-subtitle text-muted user-subtitle">Date: @order.OrderDate @order.OrderTime</p>
+                        <p class="card-subtitle text-muted user-subtitle">Order Id: @order.OrderId</p>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-muted user-subtitle">Items</h6>
+                        <ul class="list-group">
+                            @foreach (var cartItem in order.CartItems)
+                            {
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            @if (!string.IsNullOrEmpty(cartItem.MenuItemcart.ImageUrl))
+                                            {
+                                                <img src="~/Images/@cartItem.MenuItemcart.ImageUrl" alt="Item Image" class="img-fluid" />
+                                            }
+                                        </div>
+                                        <div class="col-md-9">
+                                            <strong>Item Name:</strong> @cartItem.MenuItemcart.Name<br />
+                                            <strong>Quantity:</strong> @cartItem.Quantity<br />
+                                            <strong>Subtotal:</strong> @cartItem.SubTotal<br />
+                                            <strong>Topping:</strong> @cartItem.Topping<br />
+                                            <strong>Flavour:</strong> @cartItem.Flavor<br />
+                                            <strong>Cooking Method:</strong> @cartItem.CookingMethod<br />
+                                            <strong>Notes:</strong> @(cartItem.Notes ?? "No notes")<br />
+                                            <!-- Add more details as needed -->
+                                        </div>
+                                    </div>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                    <div class="card-footer user-footer" style="background-color: #808080; color: white;">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>Total: LKR @order.Total </p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>Payment Method: @order.PaymentMethod</p>
+                            </div>
+                            <div class="col-md-4 text-right">
+                                <p>Status: @order.OrderStatus</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <p>No orders available.</p>
+        }
+    </div>
+</section>
+
+
+

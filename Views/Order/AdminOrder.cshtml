@@ -1,0 +1,87 @@
+﻿@model AdminOrderVM
+@{
+    ViewData["Title"] = "AdminOrder";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<section class="light">
+    <div class="container py-2">
+        <div class="h1 text-center text-dark" id="pageHeaderTitle">All Orders </div>
+
+        @if (Model != null && Model.Orders.Any())
+        {
+            @foreach (var order in Model.Orders)
+            {
+                <div class="card mb-4 user-card">
+                    <div class="card-header user-header" style="background-color: #db545a; color: white;">
+                        <h5 class="card-title">Order Details</h5>
+                        <p class="card-subtitle text-muted user-subtitle">Date: @order.OrderDate @order.OrderTime</p>
+                        <p class="card-subtitle text-muted user-subtitle">Order Id: @order.OrderId</p>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-muted user-subtitle">Items</h6>
+                        <ul class="list-group">
+                            @foreach (var cartItem in order.CartItems)
+                            {
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            @if (!string.IsNullOrEmpty(cartItem.MenuItemcart.ImageUrl))
+                                            {
+                                                <img src="~/Images/@cartItem.MenuItemcart.ImageUrl" alt="Item Image" class="img-fluid" />
+                                            }
+                                        </div>
+                                        <div class="col-md-9">
+                                            <strong>Item Name:</strong> @cartItem.MenuItemcart.Name<br />
+                                            <strong>Quantity:</strong> @cartItem.Quantity<br />
+                                            <strong>Subtotal:</strong> @cartItem.SubTotal<br />
+                                            <strong>Topping:</strong> @cartItem.Topping<br />
+                                            <strong>Flavour:</strong> @cartItem.Flavor<br />
+                                            <strong>Cooking Method:</strong> @cartItem.CookingMethod<br />
+                                            <strong>Notes:</strong> @(cartItem.Notes ?? "No notes")<br />
+                                            <!-- Add more details as needed -->
+                                        </div>
+                                    </div>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                    <div class="card-footer user-footer" style="background-color: #808080; color: white;">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>Total: LKR @order.Total </p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>Payment Method: @order.PaymentMethod</p>
+                            </div>
+                            <div class="col-md-4 text-right">
+                                <p>Status: @order.OrderStatus</p>
+                                <form asp-action="UpdateOrderStatus" method="post" class="form-inline">
+                                    <input type="hidden" asp-for="StatusUpdateModel.OrderId" value="@order.OrderId" />
+                                    <div class="form-group mx-sm-3">
+                                        <label for="orderStatus" class="sr-only">Update Status:</label>
+                                        <select class="form-control " asp-for="StatusUpdateModel.NewStatus" asp-items="Model.StatusOptions"></select>
+                                    </div>
+                                    <button type="submit" class="btn ml-2 mt-3 btn-primary">Update Status</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-footer user-footer" style="background-color: #808080; color: white;">
+                    
+                </div>
+            }
+        }
+        else
+        {
+            <p>No orders available.</p>
+        }
+    </div>
+</section>
+
+
+

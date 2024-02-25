@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<User> SignInManager
+@inject UserManager<User> UserManager
+@model List<MenuItem>
+
+@{
+
+}
+<div class="container mt-5">
+    <div class="row">
+        @if (User.IsInRole("Admin"))
+        {
+            <div class="row">
+                <div class="col-md-12 mb-4 text-right">
+                    <a asp-controller="Menu" asp-action="AddItem" class="btn btn-primary">
+                        <i class="fas fa-plus"></i> Add New Item
+                    </a>
+                </div>
+            </div>
+
+
+        }
+
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card shadow rounded-1" style="height: 100%;">
+                    <img src="/Images/@item.ImageUrl" class="card-img-top item-card img-fluid" alt="@item.Name" style="height: 300px;">
+                    <div class="card-body bg-light">
+                        <h5 class="card-title">@item.Name</h5>
+                        <p class="card-text">@item.Description</p>
+                        <p class="card-text"><strong>Price: LKR @item.Price</strong></p>
+
+                        @if (!User.IsInRole("Admin"))
+                        {
+                        <a asp-action="AddToCart" asp-controller="Cart" asp-route-Id="@item.Id" class="btn btn-success">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </a>
+                            
+                        }
+
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <div class="d-flex justify-content-between">
+                                <a asp-route-id="@item.Id" asp-action="EditItem" asp-controller="Menu" class="btn btn-primary">Edit</a>
+                                <a asp-route-id="@item.Id" asp-action="DeleteItem" asp-controller="Menu" class="btn btn-danger">Delete</a>
+                            </div>
+                        }
+
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+

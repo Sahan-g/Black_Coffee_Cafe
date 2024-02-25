@@ -1,0 +1,21 @@
+﻿.login-text {
+    color: #db545a;
+    font-family: 'Roboto', sans-serif;
+}
+
+.login-btn {
+    background-color: #db545a;
+    color: #fff;
+    border: none;
+    width: 150px;
+    height: 40px;
+    font-weight: 500;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+    .login-btn:hover {
+        background-color: #808080; /
+        border-color: #0056b3; 
+        color: #ffffff; 
+}

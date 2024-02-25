@@ -1,0 +1,40 @@
+﻿@{
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+<form asp-action="Login" method="post" class="d-flex align-items-center justify-content-center" style="min-height: 100vh;">
+    <div class="card shadow" style="max-width: 800px; width: 100%;">
+        <div class="row g-0">
+            <!-- Image  -->
+            <div class="col-md-6">
+                <img src="@Url.Content("~/Images/Login.jpg")" alt="Image" class="img-fluid rounded-start">
+            </div>
+
+            <!-- Form  -->
+            <div class="col-md-6">
+                <div class="card-body p-5">
+                    <h2 class="text-center login-text mb-4">Login</h2>
+
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username:</label>
+                        <input type="text" class="form-control" id="username" name="Username" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password:</label>
+                        <input type="password" class="form-control" id="password" name="Password" required>
+                    </div>
+
+                    <button type="submit" class=" login-btn btn-block">Login</button>
+
+                    <p class="mt-3 text-center">Don't have an account? <a href="@Url.Action("SignUp")">Sign up</a></p>
+                    <div class="text-center pt-3">
+                        <a href="#" class="me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+

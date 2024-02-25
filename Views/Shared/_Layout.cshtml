@@ -1,0 +1,166 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@inject UserManager<User> _userManager;
+@inject SignInManager<User> SigninManager
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Black_Coffee_Cafe</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet " href="~/css/styles.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/Black_Coffee_Cafe.styles.css" asp-append-version="true" />
+    <link href="~/css/styles.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="~/css/menu.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Cart.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css//checkout.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-ohzq0b3RJZl1U3mdT2Yb7dQK9SQIx1R/vZ5c+cnQPUbDK1Gq7nzHb7YqcYp+Wh/L16QMQlNc4zqKybvy3P9iFw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/848549d290.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand black-coffee" asp-area="" asp-controller="Home" asp-action="Index">
+                    <span class="first-word">Black</span><span class="remaining-words"> Coffee Cafe</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="Menu" asp-action="Index">Menu</a>
+                        </li>
+                        @if (User.IsInRole("User"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Cart" asp-action="Index">My Cart</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Order" asp-action="Index">My Orders</a>
+                            </li>
+                        }
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Order" asp-action="AdminOrder">Orders</a>
+                            </li>
+                        }
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="Reviews" asp-action="Index">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="About" asp-action="Index">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <partial name="_LoginPartial" />
+        </nav>
+
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                // Get the current path
+                var path = window.location.pathname;
+
+                // Add the "active" class to the corresponding nav-item
+                $('.navbar-nav .nav-item a[href="' + path + '"]').parent().addClass('active');
+            });
+        </script>
+    </header>
+
+  
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    @*<footer class="border-top footer text-muted">
+    <div class="container">
+    &copy; 2023 - Black_Coffee_Cafe - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    </div>
+    </footer>*@
+    <footer class="bg-dark text-light">
+        @{
+            string controller = ViewContext.RouteData.Values["controller"]?.ToString();
+            string action = ViewContext.RouteData.Values["action"]?.ToString();
+        }
+        @if (controller == "Home" && action == "Index")
+        {
+        <section style="background-color: #212529; color: #db545a;" class="pt-2 pb-3">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 text-center">
+                        <h2>Subscribe to Our Newsletter</h2>
+                        <p>Stay updated with our latest offers and events.</p>
+                        <form action="#" method="post" class="row g-3">
+                            <div class="col-md-8">
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email" required>
+                            </div>
+                            <div class="col-md-4">
+                                <button type="submit" class="btn btn-primary">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        }
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Contact Us</h5>
+                    <p>Email: blackCoffee@cafe.com</p>
+                    <p>Phone: +123-456-7890</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2023 Black Coffee Cafe. All rights reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-inline text-end">
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        AOS.init({
+            duration: 2000, // Adjust the duration of the animation
+        });
+    </script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

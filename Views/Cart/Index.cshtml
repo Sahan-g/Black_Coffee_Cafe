@@ -1,0 +1,71 @@
+﻿@model CartVm
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="cart-container">
+    @if (Model.Items != null && Model.Images != null && Model.ItemNames != null &&
+    Model.Items.Count == Model.Images.Count && Model.Images.Count == Model.ItemNames.Count)
+    {
+        double cartTotal = 0;
+
+        for (int i = 0; i < Model.Items.Count; i++)
+        {
+            var item = Model.Items[i];
+            var imageUrl = Model.Images[i];
+            var itemName = Model.ItemNames[i];
+
+            <div class="cart-item">
+                @if (!string.IsNullOrEmpty(imageUrl))
+                {
+                    <img src="~/Images/@imageUrl" alt="Product Image">
+                }
+                <div class="cart-item-details">
+                    <div class="cart-item-title">@itemName</div><span>x @item.Quantity</span>
+                    <div class="cart-item-price">LKR @item.SubTotal.ToString("N2")</div>
+                </div>
+
+                <div class="cart-item-actions">
+                    <a asp-action="EditCartItem" asp-route-itemid="@item.Id" class="action-link">
+                        <i class="fas fa-edit action-icon edit-icon"></i>
+                        Change
+                    </a>
+                    <a asp-action="DeleteCartItem" asp-route-itemid="@item.Id" class="action-link">
+                        <i class="fas fa-trash-alt action-icon delete-icon"></i>
+                        Remove
+                    </a>
+                </div>
+            </div>
+
+            cartTotal += item.SubTotal;
+        }
+
+        <div class="cart-total m-2 total">
+            Total: LKR @cartTotal.ToString("N2")
+        </div>
+
+        <div class="d-flex justify-content-end">
+            @if (cartTotal >= 2000)
+            {
+                <a asp-action="Index" asp-controller="Checkout" asp-route-id="@Model.CartId" class="checkout-button">
+                    <i class="fas fa-shopping-cart checkout-icon"></i>
+                    <span class="button-text">Checkout</span>
+                </a>
+            }
+            else
+            {
+                <div class="warning-message text-danger m-2 insufficient-funds">
+                    Total must be greater than 2000 for checkout.
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <p>No items in the cart.</p>
+    }
+</div>
+

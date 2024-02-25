@@ -1,0 +1,187 @@
+﻿body {
+    background-color: #f8f9fa;
+}
+
+.jumbotron {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cafe-name {
+    position: relative; /* Change absolute to relative */
+    margin-left: 10%; /* Adjust margin-left to align with your design */
+    transform: translateY(-50%);
+}
+
+.cafe-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.animate__animated {
+    animation-duration: 2s;
+}
+
+.animate__fadeInLeft {
+    animation-name: fadeInLeft;
+}
+
+.animate__fadeInRight {
+    animation-name: fadeInRight;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Adjust the final position */
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.menu-button {
+    background-color: #db545a;
+    color: #fff;
+    border: none;
+    width: 150px;
+    height: 40px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    border-radius: 20px;
+}
+
+    .menu-button:hover {
+        background-color: #808080;
+    }
+
+.second-section {
+    background-color: #f0f0f0;
+}
+
+.menu-item img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease-in-out;
+}
+
+.menu-item:hover img {
+    transform: scale(1.01);
+}
+
+.second-sec {
+    background-color: #f7f7f7;
+    padding: 0;
+    margin: 0;
+}
+
+.title-animation {
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.newsletter {
+    background-color:#808080;
+}
+
+
+}
+.menu-name {
+    color: #db545a;
+}
+menu-name2{
+    color :#808080;
+}
+.black-coffee {
+    font-weight: bold;
+}
+
+    .black-coffee .first-word {
+        color: #db545a;
+    }
+
+    .black-coffee .remaining-words {
+        color: #808080;
+    }
+
+
+/* Add some styling for the cart item actions */
+/* Add some spacing and styling to the action links */
+.cart-item-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.action-link {
+    text-decoration: none;
+    color: #808080;
+    display: flex;
+    align-items: center;
+}
+
+.action-icon {
+    margin-right: 5px;
+}
+
+/* On hover, change the color of the action link */
+.action-link:hover {
+    color: #db545a;
+}
+
+.checkout-button:hover {
+    background-color: #db545a;
+    color: #fff;
+}
+
+.custom-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-heading {
+    background-color: #f8f9fa; /* Add a light background color to the heading sections */
+    padding: 10px; /* Adjust the padding as needed */
+    border-radius: 5px; /* Add border radius for a rounded appearance */
+}
+
+    .custom-heading span {
+        color: #db545a;
+    }
+
+.custom-text {
+    color: #555555;
+}
+
+.custom-image {
+    border-radius: 8px; /* Add a border radius to the image */
+}

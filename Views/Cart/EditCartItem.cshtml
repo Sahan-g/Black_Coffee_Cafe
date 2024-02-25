@@ -1,0 +1,133 @@
+﻿@model CartItem
+@{
+    ViewData["Title"] = "EditCartItem";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+<div class="card m-5">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-8">
+                <!-- Form content -->
+                <h2 class="card-title">Edit</h2>
+
+                <form asp-controller="Cart" asp-action="EditCartItem" method="post">
+                    <div hidden class="form-group">
+                        <label asp-for="Id" class="form-label"></label>
+                        <input readonly asp-for="Id" class="form-control" />
+                    </div>
+                    <div hidden class="form-group">
+                        <label asp-for="OrderId" class="form-label"></label>
+                        <input readonly asp-for="OrderId" class="form-control" />
+                    </div>
+                    <div hidden class="form-group">
+                        <label asp-for="CartId" class="form-label"></label>
+                        <input readonly asp-for="CartId" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="MenuItemId" class="form-label"></label>
+                        <input readonly asp-for="MenuItemId" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="MenuItemcart.Price" class="form-label"></label>
+                        <input readonly id="price" asp-for="MenuItemcart.Price" class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Quantity" class="form-label"></label>
+                        <input id="quantity" asp-for="Quantity" class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="SubTotal" class="form-label"></label>
+                        <input readonly id="subtotal" asp-for="SubTotal" class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Notes" class="form-label"></label>
+                        <input asp-for="Notes" class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Flavor" class="form-label"></label>
+                        <select asp-for="Flavor" class="form-control">
+                            <option value="Standard">Standard</option>
+                            @if (Model.MenuItemcart.Flavor1 != null)
+                            {
+                                <option value="@Model.MenuItemcart.Flavor1">@Model.MenuItemcart.Flavor1</option>
+                            }
+                            @if (Model.MenuItemcart.Flavor2 != null)
+                            {
+                                <option value="@Model.MenuItemcart.Flavor2">@Model.MenuItemcart.Flavor2</option>
+                            }
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Topping" class="form-label"></label>
+                        <select asp-for="Topping" class="form-control">
+                            <option value="Standard">Standard</option>
+                            @if (Model.MenuItemcart.Topping0 != null)
+                            {
+                                <option value="@Model.MenuItemcart.Topping0">@Model.MenuItemcart.Topping0</option>
+                            }
+                            @if (Model.MenuItemcart.Topping1 != null)
+                            {
+                                <option value="@Model.MenuItemcart.Topping1">@Model.MenuItemcart.Topping1</option>
+                            }
+                            @if (Model.MenuItemcart.Topping2 != null)
+                            {
+                                <option value="@Model.MenuItemcart.Topping2">@Model.MenuItemcart.Topping2</option>
+                            }
+                            @if (Model.MenuItemcart.Topping3 != null)
+                            {
+                                <option value="@Model.MenuItemcart.Topping3">@Model.MenuItemcart.Topping3</option>
+                            }
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="CookingMethod" class="form-label"></label>
+                        <select asp-for="CookingMethod" class="form-control">
+                            <option value="Standard">Standard</option>
+                            @if (Model.MenuItemcart.CookingMethod0 != null)
+                            {
+                                <option value="@Model.MenuItemcart.CookingMethod0">@Model.MenuItemcart.CookingMethod0</option>
+                            }
+                            @if (Model.MenuItemcart.CookingMethod1 != null)
+                            {
+                                <option value="@Model.MenuItemcart.CookingMethod1">@Model.MenuItemcart.CookingMethod1</option>
+                            }
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn mt-2 btn-primary">Save Changes</button>
+                </form>
+            </div>
+
+            <div class="col-md-4">
+                <!-- Image -->
+                <img src="~/Images/@Model.MenuItemcart.ImageUrl" alt="Image" class="img-fluid" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>
+    // Attach an event listener to the quantity input
+    document.getElementById('quantity').addEventListener('input', function () {
+        // Get the quantity and price values
+        var quantity = parseInt(document.getElementById('quantity').value, 10);
+        var price = parseFloat(document.getElementById('price').value);
+
+        // Calculate the subtotal and update the input
+        var subTotal = quantity * price;
+        document.getElementById('subtotal').value = subTotal.toFixed(2); // Format to two decimal places
+    });
+</script>

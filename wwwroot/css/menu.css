@@ -1,0 +1,31 @@
+﻿.item-card {
+    transition: transform 0.3s ease-in-out;
+}
+
+    .item-card:hover {
+        transform: scale(1.05);
+    }
+
+button a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    hover
+
+{
+    text-decoration: none;
+    color: white;
+}
+
+}
+
+.hoverblank {
+    color: inherit;
+}
+
+    .hoverblank:hover {
+        color: white;
+    }

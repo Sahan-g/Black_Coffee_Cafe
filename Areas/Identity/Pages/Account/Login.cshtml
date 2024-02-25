@@ -1,0 +1,95 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+<form id="account" method="post" class="d-flex align-items-center justify-content-center" style="min-height: 100vh;">
+    <div class="card shadow" style="max-width: 800px; width: 100%;">
+        <div class="row g-0">
+            <!-- Image  -->
+            <div class="col-md-6">
+                <img src="@Url.Content("~/Images/Login.jpg")" alt="Image" class="img-fluid rounded-start">
+            </div>
+
+            <!-- Form  -->
+            <div class="col-md-6">
+                <div class="card-body p-5">
+                    <h2 class="text-center login-text mb-4">Login</h2>
+
+                     <div asp-validation-summary="ModelOnly" class="text-danger mb-3 " role="alert"></div>
+
+                    <div class="mb-3">
+                        <label asp-for="Input.Email" class="form-label">Username:</label>
+                        <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com">
+                         <span asp-validation-for="Input.Email" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Input.Password" class="form-label">Password:</label>
+                        <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="password" />
+                        
+                    </div>
+
+                    <button id="login-submit" type="submit" class=" login-btn btn-block">Login</button>
+
+                    <p class="mt-3 text-center">Don't have an account? <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Sign up</a></p>
+                    <div class="text-center pt-3">
+                        <a href="#" class="me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+@*
+<div class="row">
+    <div class="col-md-4">
+        <section>
+            <form id="account" method="post">
+                <h2>Use a local account to log in.</h2>
+                <hr />
+                <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                <div class="form-floating mb-3">
+                    <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                    <label asp-for="Input.Email" class="form-label">Email</label>
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-3">
+                    <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="password" />
+                    <label asp-for="Input.Password" class="form-label">Password</label>
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+                <div class="checkbox mb-3">
+                    <label asp-for="Input.RememberMe" class="form-label">
+                        <input class="form-check-input" asp-for="Input.RememberMe" />
+                        @Html.DisplayNameFor(m => m.Input.RememberMe)
+                    </label>
+                </div>
+                <div>
+                    <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Log in</button>
+                </div>
+                <div>
+                    <p>
+                        <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
+                    </p>
+                    <p>
+                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
+                    </p>
+                    <p>
+                        <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
+                    </p>
+                </div>
+            </form>
+        </section>
+    </div>
+  
+</div>
+*@
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

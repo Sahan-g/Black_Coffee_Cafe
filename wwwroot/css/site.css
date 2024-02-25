@@ -1,0 +1,78 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #808080; /* Set the default color */
+    text-decoration: none;
+    position: relative;
+    font-size: large;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    color: #db545a !important;
+}
+
+.navbar-nav .nav-item .nav-link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px; /* Set the height of the underline */
+    width: 0;
+    background-color: #db545a; /* Set the color of the underline */
+    transition: width 1s ease; /* Set the transition duration and timing function */
+}
+
+.navbar-nav .nav-item.active .nav-link::after {
+    width: 100%;
+}
+
+.home-link {
+   
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+}
+
+    .home-link:hover {
+        color: #db545a;
+    }
+
+        .home-link:hover::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #db545a;
+            bottom: 0;
+            left: 0;
+            transition: transform 0.3s ease-in-out;
+            transform: scaleX(0); /* Initially, set the width to zero */
+        }
+
+        .home-link:hover::after {
+            transform: scaleX(1); /* Expand the width on hover */
+        }
